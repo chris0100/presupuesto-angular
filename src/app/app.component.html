@@ -1,0 +1,27 @@
+<!--CABECERA PRINCIPAL DE DATOS-->
+<app-cabecero
+[presupuestoTotal]="getPresupuestoTotal()"
+[ingresoTotal]="getIngresoTotal()"
+[egresoTotal]="getEgresoTotal()"
+[porcentajeTotal]="getPorcentajeTotal()"
+>
+</app-cabecero>
+
+
+<!--FORMULARIO PARA AÑADIR LOS DATOS-->
+<app-formulario></app-formulario>
+
+
+<!--LISTADO DE INGRESOS Y SALIDAS-->
+<div class="contenedor limpiarEstilos">
+
+  <!--INGRESOS-->
+  <app-ingreso></app-ingreso>
+
+
+  <!--SALIDAS-->
+  <app-egreso
+    [ingresoTotal]="getIngresoTotal()"
+  ></app-egreso>
+
+</div>
