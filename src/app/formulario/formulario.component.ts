@@ -11,7 +11,7 @@ import {Egreso} from '../egreso/egreso.model';
 })
 export class FormularioComponent implements OnInit {
 
-  tipo: string = 'ingresoOperacion';
+  tipo = 'ingresoOperacion';
   descripcionInput: string;
   valorInput: number;
 
